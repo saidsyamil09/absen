@@ -1,0 +1,28 @@
+/* Simple styles for sidebar */
+body {
+  background: #f7f8fa;
+}
+.sidebar {
+  width: 240px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 56px;
+  overflow-y: auto;
+  z-index: 1030;
+}
+.sidebar .nav-link {
+  color: #cfd8dc;
+}
+.sidebar .nav-link:hover {
+  color: #fff;
+  background: rgba(255,255,255,0.03);
+}
+.content {
+  padding-top: 10px;
+}
+@media (max-width: 767px) {
+  .sidebar { position:relative; width:100%; height:auto; padding-top:0; display:none;}
+  .sidebar.show { display:block; position:fixed; z-index:2000; background:#343a40; }
+  .content { margin-left:0; padding:10px; }
+}
